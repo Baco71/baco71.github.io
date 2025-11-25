@@ -5,6 +5,38 @@ TemplateMo 556 Catalog-Z
 https://templatemo.com/tm-556-catalog-z
 
 */
+.banner-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;                  /* Abstand zwischen den Bildern */
+    padding: 30px 0;
+    flex-wrap: wrap;            /* Für kleine Bildschirme */
+}
+
+.banner-img {
+    width: 48%;                 /* Zwei Bilder nebeneinander */
+    max-width: 600px;           /* Optional */
+    height: auto;
+    border-radius: 8px;         /* Optional: abgerundete Ecken */
+    object-fit: cover;
+}
+
+.banner-textbox {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px !important;
+    color: #666666;
+    margin-top: 20px;
+}
+
+/* Auf Smartphones: Bilder untereinander */
+@media (max-width: 768px) {
+    .banner-img {
+        width: 100%;
+    }
+}
 
 #loader-wrapper {
     position: fixed;
